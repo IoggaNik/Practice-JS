@@ -1,2 +1,2 @@
 # Practice JavaScript
-## All tasks in code.mu
+All tasks in code.mu
