@@ -108,9 +108,36 @@ function level1And10() {
 
 function level2And1() {
     function task1() {
-        
+        const str = 'f20lk0';
+        console.log(str.indexOf('0'));
     }
-    task1()
-}
+    
+    function task2() {
+        for (let i = 1; i < 1001; i++) {
+            console.log(i += 4);
+        }
+    }
+    
+    function task3() {
+        const arr = [1, 2, 3, 4, 5, 6];
+        
+        while (true) {
+            if (arr.length == 0) {
+                break
+            }
+            arr.forEach(num => {
+                arr.pop(num)
+            })
+        }
 
-level2And1()
+        console.log(arr);
+    }
+    
+    function task4() {
+        const arr = [1, 2, 3, 4, 5, 6];
+        const newArr = arr.slice(0, 3);
+        
+        const result = newArr.reduce((prev, num) => prev + num, 0);
+        console.log(result);
+    }
+}
